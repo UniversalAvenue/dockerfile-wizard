@@ -26,7 +26,7 @@ if [ ! -e $NODE_VERSION_NUM ] ; then
     rm -r node-v$NODE_VERSION_NUM"
 fi
 
-npm install npm@5.10.0
+echo "RUN npm install npm@5.10.0"
 
 if [ ! -e $PYTHON_VERSION_NUM ] ; then
     echo "RUN wget https://www.python.org/ftp/python/$PYTHON_VERSION_NUM/Python-$PYTHON_VERSION_NUM.tgz && \
